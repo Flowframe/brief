@@ -475,7 +475,7 @@ final class DefaultPreset implements PresetInterface
 
                     return new Styles([
                         "border-{$side->long()}-width" => $value,
-                        'border-style' => 'solid',
+                        "border-{$side->long()}-style" => 'solid',
                     ]);
                 },
             );
@@ -541,11 +541,9 @@ final class DefaultPreset implements PresetInterface
             $rules[] = new Rule(
                 "/^border-{$side->value}(?:-(.*))?$/",
                 function (Theme $theme, $matches) use ($side) {
-                    $path = str_replace('-', '.', $matches[1]);
+                    $path = str_replace('-', '.', $matches[1] ?? 'default');
 
-                    $value = $theme->get("colors.{$matches[1]}")
-                        ?? $theme->get("colors.{$path}")
-                        ?? $matches[1];
+                    $value = $theme->get("colors.{$path}");
 
                     if ($value === null) {
                         return null;
