@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flowframe\Brief\ValueObjects;
 
-class Attributes
+final class Attributes
 {
     public function __construct(
         public array $attributes

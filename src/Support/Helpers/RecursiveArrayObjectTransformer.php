@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flowframe\Brief\Support\Helpers;
 
-class RecursiveArrayObjectTransformer
+final class RecursiveArrayObjectTransformer
 {
     public function toObject(array $array): object
     {

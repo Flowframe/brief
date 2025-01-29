@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flowframe\Brief\Support\Helpers;
 
-class RecursiveObjectMerger
+final class RecursiveObjectMerger
 {
     public function merge(object $current, object $incoming): object
     {

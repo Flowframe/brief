@@ -14,7 +14,7 @@ use Flowframe\Brief\ValueObjects\Styles;
 /**
  * @codeCoverageIgnore
  */
-class DefaultPreset implements PresetInterface
+final class DefaultPreset implements PresetInterface
 {
     public function getRules(): array
     {

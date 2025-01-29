@@ -8,7 +8,7 @@ use Flowframe\Brief\Contracts\ComponentInterface;
 use Flowframe\Brief\Contracts\RendererInterface;
 use Flowframe\Brief\Contracts\VoidComponentInterface;
 
-class HtmlRenderer implements RendererInterface
+final class HtmlRenderer implements RendererInterface
 {
     public function render(VoidComponentInterface|ComponentInterface $component): string
     {
