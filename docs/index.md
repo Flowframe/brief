@@ -8,7 +8,7 @@ hero:
     tagline: 'A PHP library for building modern email templates.'
     image:
         src: /logo.svg
-        alt: VitePress
+        alt: Brief logo
     actions:
         - theme: brand
           text: What is brief?
