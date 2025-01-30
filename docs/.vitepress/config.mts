@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
     title: 'Brief',
     description: 'Build mail templates for PHP with Brief',
+    head: [['meta', { name: 'robots', content: 'noindex' }]],
     themeConfig: {
         logo: '/logo.svg',
 
@@ -56,9 +57,7 @@ export default defineConfig({
                 {
                     text: 'Rendering',
                     base: '/docs/rendering/',
-                    items: [
-                        { text: 'HTML', link: 'html' },
-                    ],
+                    items: [{ text: 'HTML', link: 'html' }],
                 },
                 {
                     text: 'Styling',
