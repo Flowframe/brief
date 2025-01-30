@@ -6,5 +6,8 @@ namespace Flowframe\Brief\Contracts;
 
 interface VoidComponentInterface
 {
+    /**
+     * Render the component.
+     */
     public function render(): string;
 }

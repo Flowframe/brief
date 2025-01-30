@@ -29,7 +29,6 @@ phpunit.xml
 phpstan.neon
 psalm.xml
 testbench.yaml
-/docs
 /coverage
 
 # Vitepress

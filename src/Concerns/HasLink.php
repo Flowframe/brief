@@ -10,6 +10,9 @@ trait HasLink
 
     private string $target = '_blank';
 
+    /**
+     * Set the link href.
+     */
     public function href(string $href): static
     {
         $this->href = $href;
@@ -17,6 +20,9 @@ trait HasLink
         return $this;
     }
 
+    /**
+     * Set the link target.
+     */
     public function target(string $target): static
     {
         $this->target = $target;

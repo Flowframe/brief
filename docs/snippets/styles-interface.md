@@ -1,11 +1,8 @@
-<?php
+### Styles Interface
 
-declare(strict_types=1);
+Allows a component to receive styles.
 
-namespace Flowframe\Brief\Contracts;
-
-use Flowframe\Brief\ValueObjects\Styles;
-
+```php
 interface StylesInterface
 {
     /**
@@ -18,3 +15,4 @@ interface StylesInterface
      */
     public function getStyles(): Styles;
 }
+```

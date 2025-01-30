@@ -1,9 +1,8 @@
-<?php
+### Component Interface
 
-declare(strict_types=1);
+Allows a components to have childeren and render HTML.
 
-namespace Flowframe\Brief\Contracts;
-
+```php
 interface ComponentInterface
 {
     /**
@@ -21,3 +20,4 @@ interface ComponentInterface
      */
     public function render(?string $slot = null): string;
 }
+```
