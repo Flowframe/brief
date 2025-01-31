@@ -4,6 +4,7 @@ export default defineConfig({
     title: 'Brief',
     description: 'Build mail templates for PHP with Brief',
     head: [['meta', { name: 'robots', content: 'noindex' }]],
+    cleanUrls: true,
     themeConfig: {
         logo: '/logo.svg',
 
