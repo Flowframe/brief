@@ -24,7 +24,7 @@ $atomic('bg-gray-50 text-xl');
 ```
 
 ::: tip
-It's recommended to euther make an Atomic factory or bind an instance to the service container. This way the configuration is all managed in one place.
+It's recommended to either make an Atomic factory or bind an instance to the service container. This way the configuration is all managed in one place.
 :::
 
 ## Extending

@@ -3,7 +3,7 @@
 To render templates, use the `HtmlRenderer`:
 
 ```php
-use Flowframe\Components\Html;
+use Flowframe\Brief\Components\Html;
 use Flowframe\Brief\Renderers\HtmlRenderer;
 
 $template = Html::make(

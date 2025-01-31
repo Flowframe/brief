@@ -11,13 +11,13 @@ composer require flowframe/brief
 After installation, you can begin creating templates by defining their structure through components. The example below demonstrates a basic template structure:
 
 ```php
-use Flowframe\Components\Html;
-use Flowframe\Components\Body;
-use Flowframe\Components\Container;
-use Flowframe\Components\Section;
-use Flowframe\Components\Text;
-use Flowframe\Components\Hr;
-use Flowframe\Components\Button;
+use Flowframe\Brief\Components\Html;
+use Flowframe\Brief\Components\Body;
+use Flowframe\Brief\Components\Container;
+use Flowframe\Brief\Components\Section;
+use Flowframe\Brief\Components\Text;
+use Flowframe\Brief\Components\Hr;
+use Flowframe\Brief\Components\Button;
 
 $template = Html::make(
     Body::make(
@@ -49,13 +49,13 @@ $template = Html::make(
 To render the template, use the `HtmlRenderer`:
 
 ```php
-use Flowframe\Components\Html;
-use Flowframe\Components\Body;
-use Flowframe\Components\Container;
-use Flowframe\Components\Section;
-use Flowframe\Components\Text;
-use Flowframe\Components\Hr;
-use Flowframe\Components\Button;
+use Flowframe\Brief\Components\Html;
+use Flowframe\Brief\Components\Body;
+use Flowframe\Brief\Components\Container;
+use Flowframe\Brief\Components\Section;
+use Flowframe\Brief\Components\Text;
+use Flowframe\Brief\Components\Hr;
+use Flowframe\Brief\Components\Button;
 use Flowframe\Brief\Renderers\HtmlRenderer; // [!code ++]
 
 $template = Html::make(
