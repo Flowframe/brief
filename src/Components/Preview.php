@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flowframe\Brief\Components;
 
-use Flowframe\Brief\Contracts\VoidComponentInterface;
+use Flowframe\Brief\Components\Contracts\VoidComponentInterface;
 use Flowframe\Brief\ValueObjects\Attributes;
 use Flowframe\Brief\ValueObjects\Styles;
 

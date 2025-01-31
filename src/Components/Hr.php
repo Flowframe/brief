@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Flowframe\Brief\Components;
 
-use Flowframe\Brief\Concerns\HasStyles;
-use Flowframe\Brief\Contracts\StylesInterface;
-use Flowframe\Brief\Contracts\VoidComponentInterface;
+use Flowframe\Brief\Components\Concerns\HasStyles;
+use Flowframe\Brief\Components\Contracts\StylesInterface;
+use Flowframe\Brief\Components\Contracts\VoidComponentInterface;
 use Flowframe\Brief\ValueObjects\Attributes;
 use Flowframe\Brief\ValueObjects\Styles;
 

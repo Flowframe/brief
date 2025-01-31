@@ -97,8 +97,8 @@ Apply styles using the `style()` method on components that implement the `Styles
 
 ```php
 use Flowframe\Brief\Components\Button;
-use Flowframe\Brief\Support\Atomic;
-use Flowframe\Brief\Support\Atomic\Presets\DefaultPreset;
+use Flowframe\Brief\Atomic\Atomic;
+use Flowframe\Brief\Atomic\Presets\DefaultPreset;
 
 $a = Atomic::make([new DefaultPreset]);
 

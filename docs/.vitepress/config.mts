@@ -21,7 +21,7 @@ export default defineConfig({
 
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2025-present Flowframe',
+            copyright: 'Copyright © 2025-present <a href="https://flowframe.nl">Flowframe</a>',
         },
 
         sidebar: {
@@ -57,7 +57,11 @@ export default defineConfig({
                 {
                     text: 'Rendering',
                     base: '/docs/rendering/',
-                    items: [{ text: 'HTML', link: 'html' }],
+                    items: [
+                        { text: 'Basics', link: 'basics' },
+                        { text: 'HTML', link: 'html' },
+                        { text: 'Text', link: 'text' },
+                    ],
                 },
                 {
                     text: 'Styling',

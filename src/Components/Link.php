@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Flowframe\Brief\Components;
 
-use Flowframe\Brief\Concerns\HasLink;
-use Flowframe\Brief\Concerns\HasStyles;
-use Flowframe\Brief\Concerns\IsComponent;
-use Flowframe\Brief\Contracts\ComponentInterface;
-use Flowframe\Brief\Contracts\LinkInterface;
-use Flowframe\Brief\Contracts\StylesInterface;
+use Flowframe\Brief\Components\Concerns\HasLink;
+use Flowframe\Brief\Components\Concerns\HasStyles;
+use Flowframe\Brief\Components\Concerns\IsComponent;
+use Flowframe\Brief\Components\Contracts\ComponentInterface;
+use Flowframe\Brief\Components\Contracts\LinkInterface;
+use Flowframe\Brief\Components\Contracts\StylesInterface;
 use Flowframe\Brief\ValueObjects\Attributes;
 use Flowframe\Brief\ValueObjects\Styles;
 

@@ -28,9 +28,6 @@
         }
     },
     "autoload-dev": {
-        "files": [
-            "tools/code-to-docs.php"
-        ],
         "psr-4": {
             "Flowframe\\Brief\\Tests\\": "tests"
         }

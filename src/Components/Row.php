@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Flowframe\Brief\Components;
 
-use Flowframe\Brief\Concerns\IsComponent;
-use Flowframe\Brief\Contracts\ComponentInterface;
+use Flowframe\Brief\Components\Concerns\IsComponent;
+use Flowframe\Brief\Components\Contracts\ComponentInterface;
 use Flowframe\Brief\ValueObjects\Attributes;
 use Flowframe\Brief\ValueObjects\Styles;
 

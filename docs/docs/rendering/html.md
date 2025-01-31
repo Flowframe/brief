@@ -1,6 +1,6 @@
 # Rendering HTML
 
-To render templates, use the `HtmlRenderer`:
+To render templates to HTML, use the `HtmlRenderer`:
 
 ```php
 use Flowframe\Brief\Components\Html;
@@ -14,7 +14,3 @@ $renderer = new HtmlRenderer();
 
 $renderer->render($template);
 ```
-
-::: warning
-Components should not render themselves directly. The renderer processes the component tree to generate HTML output, maintaining separation between component structure and rendering logic.
-:::

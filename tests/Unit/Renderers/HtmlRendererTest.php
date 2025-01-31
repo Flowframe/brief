@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Flowframe\Brief\Components\Body;
+use Flowframe\Brief\Components\Button;
 use Flowframe\Brief\Components\Container;
 use Flowframe\Brief\Components\Head;
 use Flowframe\Brief\Components\Hr;
@@ -11,7 +12,7 @@ use Flowframe\Brief\Components\Section;
 use Flowframe\Brief\Components\Text;
 use Flowframe\Brief\Renderers\HtmlRenderer;
 
-test('it can render', function (bool $conditional) {
+test('it can render html', function (bool $conditional) {
     $renderer = new HtmlRenderer;
 
     $html = $renderer->render(
@@ -25,6 +26,9 @@ test('it can render', function (bool $conditional) {
 
                         Hr::make(),
                     ),
+
+                    Button::make('Click me')
+                        ->href('https://example.com'),
 
                     Text::make(function () use ($conditional) {
                         if ($conditional) {

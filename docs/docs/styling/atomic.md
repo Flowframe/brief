@@ -9,8 +9,8 @@ To use Atomic you create an instance. A `Styles` object gets returned when you i
 You can opt-in to use the default preset which comes with Tailwind CSS like utilities.
 
 ```php
-use Flowframe\Brief\Support\Atomic;
-use Flowframe\Brief\Support\Atomic\Presets\DefaultPreset;
+use Flowframe\Brief\Atomic\Atomic;
+use Flowframe\Brief\Atomic\Presets\DefaultPreset;
 
 $atomic = Atomic::make([new DefaultPreset]);
 
@@ -36,9 +36,9 @@ You can extend Atomic on the fly without creating presets.
 To extend a theme you chain `extendTheme()`:
 
 ```php
-use Flowframe\Brief\Support\Atomic;
-use Flowframe\Brief\Support\Atomic\ValueObjects\Theme;
-use Flowframe\Brief\Support\Atomic\Presets\DefaultPreset;
+use Flowframe\Brief\Atomic\Atomic;
+use Flowframe\Brief\Atomic\ValueObjects\Theme;
+use Flowframe\Brief\Atomic\Presets\DefaultPreset;
 
 $atomic = Atomic::make([new DefaultPreset])
     ->extendTheme(Theme::make([
@@ -63,9 +63,9 @@ This will merge the current theme with the given one. If the given key already e
 To extend rules you chain `extendRules()`:
 
 ```php
-use Flowframe\Brief\Support\Atomic;
-use Flowframe\Brief\Support\Atomic\ValueObjects\Rules;
-use Flowframe\Brief\Support\Atomic\Presets\DefaultPreset;
+use Flowframe\Brief\Atomic\Atomic;
+use Flowframe\Brief\Atomic\ValueObjects\Rules;
+use Flowframe\Brief\Atomic\Presets\DefaultPreset;
 
 $atomic = Atomic::make([new DefaultPreset])
     ->extendRules([
