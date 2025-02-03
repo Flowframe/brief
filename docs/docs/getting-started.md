@@ -46,7 +46,7 @@ $template = Html::make(
 
 ## Rendering templates
 
-To render the template, use the `HtmlRenderer`:
+To render the template, use the `RendererFactory`:
 
 ```php
 use Flowframe\Brief\Components\Html;
@@ -56,7 +56,7 @@ use Flowframe\Brief\Components\Section;
 use Flowframe\Brief\Components\Text;
 use Flowframe\Brief\Components\Hr;
 use Flowframe\Brief\Components\Button;
-use Flowframe\Brief\Renderers\HtmlRenderer; // [!code ++]
+use Flowframe\Brief\Renderers\RendererFactory; // [!code ++]
 
 $template = Html::make(
     Body::make(
@@ -82,9 +82,11 @@ $template = Html::make(
     )
 );
 
-$renderer = new HtmlRenderer(); // [!code ++]
+$renderer = new RendererFactory(); // [!code ++]
 
-echo $renderer->render($template); // [!code ++]
+$html = $renderer->toHtml($template); // [!code ++]
+
+$text = $renderer->toText($template); // [!code ++]
 ```
 
 ::: warning

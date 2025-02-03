@@ -28,6 +28,11 @@ When a preset is passed to Atomic it'll automatically merge the new rules and th
 ## Example
 
 ```php
+use Flowframe\Brief\ValueObjects\Styles;
+use Flowframe\Brief\Atomic\ValueObjects\Rule;
+use Flowframe\Brief\Atomic\ValueObjects\Theme;
+use Flowframe\Brief\Atomic\Contracts\PresetInterface;
+
 class MyPreset implements PresetInterface
 {
     public function getRules(): array

@@ -17,8 +17,9 @@ $template = Html::make(
     // ...
 );
 
-echo $renderer->toHtml($template);
-echo $renderer->toText($template);
+$html = $renderer->toHtml($template);
+
+$text = $renderer->toText($template);
 ```
 
 ## Binding to a service container
@@ -26,8 +27,6 @@ echo $renderer->toText($template);
 Most popular frameworks come with a service container, here you can easily bind a concrete implementation to an interface. This keeps the configuration all in one place and avoids code duplication. Below is an example in Laravel:
 
 ```php
-<?php
-
 use Flowframe\Brief\Renderers\HtmlRenderer;
 use Flowframe\Brief\Renderers\TextRenderer;
 use Flowframe\Brief\Renderers\RendererFactory;

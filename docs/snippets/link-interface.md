@@ -14,5 +14,10 @@ interface LinkInterface
      * Set the link target.
      */
     public function target(string $target): static;
+
+    /**
+     * Get the link href.
+     */
+    public function getHref(): string;
 }
 ```

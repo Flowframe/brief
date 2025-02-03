@@ -7,6 +7,9 @@ With rules you can generate CSS.
 Static rules are commonly used when you need to return a static value which doesn't rely on regex matches:
 
 ```php
+use Flowframe\Brief\ValueObjects\Styles;
+use Flowframe\Brief\Atomic\ValueObjects\Rule;
+
 new Rule('/^bg-hotpink$/', new Styles([
     'background-color' => 'hotpink',
 ]));
@@ -21,6 +24,10 @@ You can leverage dynamic rules to generate CSS on the fly or to create utility c
 The first example shows how to create utility classes based on a theme:
 
 ```php
+use Flowframe\Brief\ValueObjects\Styles;
+use Flowframe\Brief\Atomic\ValueObjects\Rule;
+use Flowframe\Brief\Atomic\ValueObjects\Theme;
+
 new Rule(
     '/^bg-(.*)$/',
     function (Theme $theme, $matches) {
@@ -40,6 +47,10 @@ new Rule(
 The second example shows how to create a dynamic scale class for padding:
 
 ```php
+use Flowframe\Brief\ValueObjects\Styles;
+use Flowframe\Brief\Atomic\ValueObjects\Rule;
+use Flowframe\Brief\Atomic\ValueObjects\Theme;
+
 new Rule(
     '/^padding-(.*)$/',
     function (Theme $theme, $matches) {
