@@ -14,7 +14,10 @@ Aside from its components it also ships with a Tailwind CSS like engine (named A
 
 ```php
 // Create a renderer
-$renderer = new RendererFactory();
+$renderer = new RendererFactory(
+    new HtmlRenderer,
+    new TextRenderer,
+);
 
 // Utilize Atomic for styling
 $a = new Atomic([new DefaultPreset]);

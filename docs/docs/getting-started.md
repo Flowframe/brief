@@ -56,6 +56,8 @@ use Flowframe\Brief\Components\Section;
 use Flowframe\Brief\Components\Text;
 use Flowframe\Brief\Components\Hr;
 use Flowframe\Brief\Components\Button;
+use Flowframe\Brief\Renderers\HtmlRenderer; // [!code ++]
+use Flowframe\Brief\Renderers\TextRenderer; // [!code ++]
 use Flowframe\Brief\Renderers\RendererFactory; // [!code ++]
 
 $template = Html::make(
@@ -82,7 +84,10 @@ $template = Html::make(
     )
 );
 
-$renderer = new RendererFactory(); // [!code ++]
+$renderer = new RendererFactory(
+    new HtmlRenderer, // [!code ++]
+    new TextRenderer, // [!code ++]
+); // [!code ++]
 
 $html = $renderer->toHtml($template); // [!code ++]
 
