@@ -33,7 +33,7 @@ $template = Html::make(
                 Text::make('It is as simple as this.')
                     ->style($a('text-sm text-gray-600 mt-4')),
 
-                Button::make('Get started')
+                Button::make('Getting started')
                     ->href('/get-started')
             )->style($a('p-6 bg-gray-50'))
         )
