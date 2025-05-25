@@ -1,0 +1,8 @@
+<style>
+    @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        src: url("https://example.com") format("woff2");
+    }
+</style>
